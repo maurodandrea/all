@@ -1,5 +1,5 @@
 ---
-"@all/test2": major
+"@all/test": major
 ---
 
 d
