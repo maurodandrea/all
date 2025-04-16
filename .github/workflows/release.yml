@@ -24,7 +24,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Publish only if commit is "chore: update versions"
+      - name: Publish only if commit is chore update versions
         run: |
           COMMIT_MSG=$(git log -1 --pretty=%B)
           echo "Last commit: $COMMIT_MSG"
