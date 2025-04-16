@@ -1,5 +1,11 @@
 # all
 
+## 11.0.0
+
+### Major Changes
+
+- e8b8d09: v12
+
 ## 10.1.0
 
 ### Minor Changes
