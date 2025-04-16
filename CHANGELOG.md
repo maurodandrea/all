@@ -1,5 +1,11 @@
 # all
 
+## 19.0.0
+
+### Major Changes
+
+- aa5edb4: s
+
 ## 18.0.0
 
 ### Major Changes
