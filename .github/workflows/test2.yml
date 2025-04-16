@@ -43,7 +43,7 @@ jobs:
         id: version
         run: |
           # Estrai il nome del pacchetto dal package.json
-          PACKAGE_NAME=$(node -p "require('./package.json').name")
+          PACKAGE_NAME=""
 
           # Estrai la versione dal changelog (assumendo che changeset abbia taggato una versione)
           VERSION=$(git describe --tags --abbrev=0)
