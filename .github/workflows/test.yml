@@ -25,6 +25,7 @@ jobs:
         run: npm ci
 
       - name: Create Version with Changeset
+        id: version
         run: |
           npm run version  # Aumenta la versione dei pacchetti
           npm run publish  # Pubblica la nuova versione
