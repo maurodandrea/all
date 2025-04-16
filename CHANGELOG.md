@@ -1,5 +1,11 @@
 # all
 
+## 6.1.0
+
+### Minor Changes
+
+- cdb8b3a: minor
+
 ## 6.0.0
 
 ### Major Changes
