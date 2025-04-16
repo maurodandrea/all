@@ -1,5 +1,12 @@
 # all
 
+## 15.0.0
+
+### Major Changes
+
+- f863e8e: d
+- 792768e: newversion
+
 ## 14.0.0
 
 ### Major Changes
