@@ -1,5 +1,14 @@
 # all
 
+## 24.0.0
+
+### Major Changes
+
+- c9f7cb5: d
+- 70889ca: test2
+- 27aff44: s
+- 1ba4125: dd
+
 ## 23.0.0
 
 ### Major Changes
