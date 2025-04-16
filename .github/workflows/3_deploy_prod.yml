@@ -18,7 +18,7 @@ jobs:
     steps:
       - name: Deploy to Production
         env:
-          GITHUB_TOKEN: ${{ secrets.PAT }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
         run: |
           echo "Deploying to production..."
         
