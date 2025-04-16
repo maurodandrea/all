@@ -3,7 +3,7 @@ name: Changelog
 on:
   push:
     branches:
-      - main # Triggered by push on main
+      - main # Triggered by push on main branch
     #paths:
     #  - .changeset/** # Only on changes to ./changeset/*
 
