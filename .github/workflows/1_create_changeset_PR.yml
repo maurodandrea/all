@@ -1,3 +1,20 @@
+# command: npm install @changesets/cli , npx changeset init , npx changeset
+
+# project.json
+# {
+#   "devDependencies": {
+#     "@changesets/cli": "^2.29.0"
+#   },
+#   "name": "@all/test",
+#   "version": "29.0.0",
+#   "private": true,
+#   "scripts": {
+#     "version": "changeset version && npm install",
+#     "tag": "changeset publish",
+#     "publish": "changeset publish"
+#   }
+# }
+
 name: Create Changeset PR
 
 on:
