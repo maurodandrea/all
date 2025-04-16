@@ -1,5 +1,18 @@
 # all
 
+## 29.0.0
+
+### Major Changes
+
+- e38336e: d
+- 8eeada6: f
+- 6317521: a
+- e0c770a: a
+
+### Minor Changes
+
+- 6e320b7: a
+
 ## 28.0.2
 
 ### Patch Changes
