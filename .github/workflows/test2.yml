@@ -42,16 +42,10 @@ jobs:
       - name: Extract Package Name and Version
         id: version
         run: |
-          # Estrai il nome del pacchetto dal package.json
-          PACKAGE_NAME=""
-
-          # Estrai la versione dal changelog (assumendo che changeset abbia taggato una versione)
-          VERSION=$(git describe --tags --abbrev=0)
-
-          # Combina nome del pacchetto e versione
+          PACKAGE_NAME=$(node -p "require('./package.json').name")
+          OUTPUT=$(npm run version)
+          VERSION=$(echo $OUTPUT | grep -o '[0-9]*\.[0-9]*\.[0-9]*')
           PACKAGE_VERSION="${PACKAGE_NAME}@${VERSION}"
-
-          # Salva il risultato come output
           echo "package_version=$PACKAGE_VERSION" >> $GITHUB_OUTPUT
 
       # Step 6: Crea il tag Git basato sul nome del pacchetto e sulla versione
