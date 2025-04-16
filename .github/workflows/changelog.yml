@@ -3,9 +3,9 @@ name: Changelog
 on:
   push:
     branches:
-      - main # Triggered by push on main
-    paths:
-      - .changeset/** # Only on changes to ./changeset/*
+      - main # Triggered by push on main branch
+    #paths:
+    #  - .changeset/** # Only on changes to ./changeset/*
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
