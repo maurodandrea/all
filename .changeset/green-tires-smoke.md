@@ -1,5 +1,0 @@
----
-"all": patch
----
-
-gh-pat
