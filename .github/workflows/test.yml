@@ -29,9 +29,9 @@ jobs:
         run: |
           PACKAGE_NAME=$(node -p "require('./package.json').name")
           OUTPUT=$(npm run version)
-          VERSION=$(echo "$OUTPUT" | grep -o '[0-9]*\.[0-9]*\.[0-9]*')
+          VERSION=$(echo $OUTPUT | grep -o '[0-9]*\.[0-9]*\.[0-9]*')
           PACKAGE_VERSION="${PACKAGE_NAME}@${VERSION}"
-          echo "package_version=$PACKAGE_VERSION" >> $GITHUB_OUTPUT
+          echo "new_version=$PACKAGE_VERSION" >> $GITHUB_OUTPUT
 
       - name: Commit Version Changes
         run: |
