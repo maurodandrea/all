@@ -1,15 +1,6 @@
-name: Release
-
-on:
-  push:
-    branches:
-      - main
-
 jobs:
   release:
-    if: contains(github.event.head_commit.message, 'chore: update versions')
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
         with:
@@ -22,7 +13,8 @@ jobs:
 
       - run: npm ci
 
-      - name: Publish packages
+      - name: Publish only if release commit
+        if: contains(github.event.head_commit.message, 'chore: update versions')
         run: npm run publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
