@@ -27,7 +27,6 @@ jobs:
       - name: Create Version with Changeset
         id: version
         run: |
-          npm run version >> $GITHUB_OUTPUT # Aumenta la versione dei pacchetti
           VERSION=$(npm run version)
           echo "new_version=$VERSION" >> $GITHUB_OUTPUT
           npm run publish  # Pubblica la nuova versione
