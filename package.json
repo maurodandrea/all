@@ -3,7 +3,7 @@
     "@changesets/cli": "^2.29.0"
   },
   "name": "@all/test",
-  "version": "6.1.0",
+  "version": "7.0.0",
   "private": true,
   "scripts": {
     "version": "changeset version && npm install",
