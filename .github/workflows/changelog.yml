@@ -4,8 +4,8 @@ on:
   push:
     branches:
       - main # Triggered by push on main
-    paths:
-      - .changeset/** # Only on changes to ./changeset/*
+    #paths:
+    #  - .changeset/** # Only on changes to ./changeset/*
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
