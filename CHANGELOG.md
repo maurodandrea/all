@@ -1,5 +1,21 @@
 # all
 
+## 6.0.0
+
+### Major Changes
+
+- changeset major
+
+## 5.0.0
+
+### Major Changes
+
+- 4ebf90d: v5
+
+### Patch Changes
+
+- a
+
 ## 4.0.1
 
 ### Patch Changes
