@@ -1,0 +1,67 @@
+name: Create Changeset PR
+
+on:
+  push:
+    branches:
+      - main  # Triggered by push on the main branch
+
+jobs:
+  release:
+    name: Create Changeset
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout del codice
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Step 2: Setup Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      # Step 3: Installa le dipendenze
+      - name: Install dependencies
+        run: npm ci --audit=false --fund=false
+
+      # Step 4: Esegui l'azione changeset per gestire la versione e il changelog
+      - name: Create Changesets
+        uses: changesets/action@f13b1baaa620fde937751f5d2c3572b9da32af23
+        with:
+          version: npm run version  # Usa npm run version
+          publish: npm run publish  # Usa npm run publish
+          commit: "Update CHANGELOG and prepare next release"
+          title: "Push next releases"
+          createGithubReleases: false  # Non crea la release qui, sarà fatta successivamente
+          setupGitUser: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # # Step 5: Estrai il nome del pacchetto dal package.json e la versione
+      # - name: Extract Package Name and Version
+      #   id: version
+      #   run: |
+      #     PACKAGE_NAME=$(node -p "require('./package.json').name")
+      #     OUTPUT=$(npm run version)
+      #     VERSION=$(echo $OUTPUT | grep -o '[0-9]*\.[0-9]*\.[0-9]*')
+      #     PACKAGE_VERSION="${PACKAGE_NAME}@${VERSION}"
+      #     echo "package_version=$PACKAGE_VERSION" >> $GITHUB_OUTPUT
+
+      # # Step 6: Crea il tag Git basato sul nome del pacchetto e sulla versione
+      # - name: Create Git Tag
+      #   run: |
+      #     git tag v${{ steps.version.outputs.package_version }}  # Crea il tag
+      #     git push origin v${{ steps.version.outputs.package_version }}  # Spingi il tag nel repository
+
+      # # Step 7: Crea la release su GitHub con l'azione corretta
+      # - name: Create Release on GitHub
+      #   uses: actions/create-release@v1
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     tag_name: v${{ steps.version.outputs.package_version }}
+      #     release_name: Release ${{ steps.version.outputs.package_version }}
+      #     body: "Release notes for version ${{ steps.version.outputs.package_version }}"
+      #     draft: false
+      #     prerelease: false

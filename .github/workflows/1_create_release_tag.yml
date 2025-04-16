@@ -1,4 +1,4 @@
-name: Release Workflow
+name: Create Release Tag
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   release:
-    name: Create Release
+    name: Create Release Tag
     runs-on: ubuntu-latest
 
     steps:
@@ -25,18 +25,18 @@ jobs:
       - name: Install dependencies
         run: npm ci --audit=false --fund=false
 
-      # Step 4: Esegui l'azione changeset per gestire la versione e il changelog
-      - name: Create Release with Changesets
-        uses: changesets/action@f13b1baaa620fde937751f5d2c3572b9da32af23
-        with:
-          version: npm run version  # Usa npm run version
-          publish: npm run publish  # Usa npm run publish
-          commit: "Update CHANGELOG and prepare next release"
-          title: "Push next releases"
-          createGithubReleases: false  # Non crea la release qui, sarà fatta successivamente
-          setupGitUser: true
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # # Step 4: Esegui l'azione changeset per gestire la versione e il changelog
+      # - name: Create Release with Changesets
+      #   uses: changesets/action@f13b1baaa620fde937751f5d2c3572b9da32af23
+      #   with:
+      #     version: npm run version  # Usa npm run version
+      #     publish: npm run publish  # Usa npm run publish
+      #     commit: "Update CHANGELOG and prepare next release"
+      #     title: "Push next releases"
+      #     createGithubReleases: false  # Non crea la release qui, sarà fatta successivamente
+      #     setupGitUser: true
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # Step 5: Estrai il nome del pacchetto dal package.json e la versione
       - name: Extract Package Name and Version
