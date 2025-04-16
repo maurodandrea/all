@@ -31,8 +31,8 @@ jobs:
       - name: Publish only if commit is chore update versions
         run: |
           COMMIT_MSG=$(git log -1 --pretty=%B)
-          echo "Last commit: $COMMIT_MSG"
-          if [[ "$COMMIT_MSG" == "chore: update versions" ]]; then
+          echo $COMMIT_MSG
+          if [[ $COMMIT_MSG == "chore: update versions" ]]; then
             npm run publish
           else
             echo "No release commit, skipping publish"
