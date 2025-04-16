@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main  # Triggered by push on the main branch
+    paths:
+      - .changeset/** # Only on changes to ./changeset/*
 
 jobs:
   release:
