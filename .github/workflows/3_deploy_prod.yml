@@ -1,0 +1,13 @@
+name: Deploy to Production
+
+on:
+  release:
+    types: [created]  # Trigger only when a new release is created
+
+jobs:
+  deploy-prod:
+    if: contains(github.event.release.name, 'PROD') || contains(github.event.release.tag_name, 'PROD')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo deploy message
+        run: echo "Start Deploy PROD"
