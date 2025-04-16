@@ -1,8 +1,11 @@
 name: Deploy to Production
 
 on:
+  push:
+    branches:
+      - main  # Triggered by push on the main branch
   release:
-    types: [created, published]  # Trigger only when a new release is created
+    types: [created]  # Trigger only when a new release is created
 
 jobs:
   release-name:
@@ -16,9 +19,5 @@ jobs:
     if: contains(github.event.release.name, 'all')
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy to Production
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          echo "Deploying to production..."
-        
+      - name: Echo deploy message
+        run: echo "Start Deploy PROD"
