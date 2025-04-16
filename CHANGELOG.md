@@ -1,5 +1,11 @@
 # all
 
+## 13.0.0
+
+### Major Changes
+
+- ec99d91: summary-changeset-v12
+
 ## 12.0.0
 
 ### Major Changes
