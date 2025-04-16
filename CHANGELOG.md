@@ -1,5 +1,11 @@
 # all
 
+## 20.0.0
+
+### Major Changes
+
+- deece2c: 19
+
 ## 19.0.0
 
 ### Major Changes
