@@ -1,5 +1,11 @@
 # all
 
+## 30.0.0
+
+### Major Changes
+
+- ca715a3: e
+
 ## 29.0.0
 
 ### Major Changes
