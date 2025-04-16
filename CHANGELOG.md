@@ -1,5 +1,13 @@
 # all
 
+## 22.0.0
+
+### Major Changes
+
+- ed10e27: d
+- bf07c47: r
+- bf07c47: dd
+
 ## 21.1.0
 
 ### Minor Changes
