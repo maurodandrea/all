@@ -34,7 +34,7 @@ jobs:
         with:
           # Note: npm i after versioning is necessary to refresh package-lock.json file
           version: npm run version
-          publish: npm run tag
+          publish: npm run publish
           commit: "Update CHANGELOG and prepare next release"
           title: "Push next releases"
           createGithubReleases: false
