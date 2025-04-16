@@ -1,5 +1,0 @@
----
-"@all/test": minor
----
-
-a
