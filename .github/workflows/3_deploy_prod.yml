@@ -5,6 +5,13 @@ on:
     types: [created]  # Trigger only when a new release is created
 
 jobs:
+  release-name:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show release info
+        run: |
+          echo "Release name: ${{ github.event.release.name }}"
+          echo "Tag: ${{ github.event.release.tag_name }}"
   deploy-prod:
     if: contains(github.event.release.name, 'all')
     runs-on: ubuntu-latest
