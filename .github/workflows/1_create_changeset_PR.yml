@@ -38,7 +38,7 @@ jobs:
           createGithubReleases: false  # Non crea la release qui, sarà fatta successivamente
           setupGitUser: true
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
 
       # # Step 5: Estrai il nome del pacchetto dal package.json e la versione
       # - name: Extract Package Name and Version
