@@ -1,5 +1,0 @@
----
-"all": major
----
-
-rele
