@@ -27,9 +27,9 @@ jobs:
       - name: Create Version with Changeset
         id: version
         run: |
-          VERSION=$(npm run version)
+          OUTPUT=$(npm run version)
+          VERSION=$(echo $OUTPUT | grep '@all/test@' | grep -o '[0-9]*\.[0-9]*\.[0-9]*')
           echo "new_version=$VERSION" >> $GITHUB_OUTPUT
-          npm run publish  # Pubblica la nuova versione
 
       - name: Commit Version Changes
         run: |
