@@ -2,7 +2,7 @@ name: Deploy to Production
 
 on:
   release:
-    types: [created]  # Trigger only when a new release is created
+    types: [created, published]  # Trigger only when a new release is created
 
 jobs:
   release-name:
@@ -18,7 +18,7 @@ jobs:
     steps:
       - name: Deploy to Production
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "Deploying to production..."
         
