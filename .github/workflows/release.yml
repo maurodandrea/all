@@ -33,6 +33,7 @@ jobs:
           COMMIT_MSG=$(git log -1 --pretty=%B)
           echo $COMMIT_MSG
           if [[ $COMMIT_MSG == "chore: update versions" ]]; then
+            npm run version
             npm run publish
           else
             echo "No release commit, skipping publish"
