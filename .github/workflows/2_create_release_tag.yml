@@ -5,7 +5,7 @@ on:
     branches:
       - main  # Triggered by push on the main branch
     paths:
-      - .changeset/CHANGELOG.md # Only on changes to ./changeset/*
+      - CHANGELOG.md # Only on changes to ./changeset/*
 
 jobs:
   release:
