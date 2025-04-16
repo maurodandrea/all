@@ -1,5 +1,11 @@
 # all
 
+## 26.0.0
+
+### Major Changes
+
+- 39e1919: a
+
 ## 25.0.0
 
 ### Major Changes
