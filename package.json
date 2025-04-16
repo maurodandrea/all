@@ -4,5 +4,9 @@
   },
   "name": "all",
   "version": "2.0.0",
-  "private": true
+  "private": true,
+  "scripts": {
+    "version": "changeset version && npm install",
+    "tag": "changeset publish"
+}
 }
