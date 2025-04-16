@@ -6,7 +6,7 @@ on:
 
 jobs:
   deploy-prod:
-    if: contains(github.event.release.name, 'PROD') || contains(github.event.release.tag_name, 'PROD')
+    if: contains(github.event.release.name, 'all') || contains(github.event.release.tag_name, 'all')
     runs-on: ubuntu-latest
     steps:
       - name: Echo deploy message
