@@ -1,5 +1,11 @@
 # all
 
+## 32.0.0
+
+### Major Changes
+
+- 49b0c6f: test
+
 ## 31.0.0
 
 ### Major Changes
