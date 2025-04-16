@@ -1,5 +1,11 @@
 # all
 
+## 25.0.0
+
+### Major Changes
+
+- d99efdd: s
+
 ## 24.0.0
 
 ### Major Changes
