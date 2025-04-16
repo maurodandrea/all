@@ -1,5 +1,11 @@
 # all
 
+## 7.0.0
+
+### Major Changes
+
+- 626fbd6: sette
+
 ## 6.1.0
 
 ### Minor Changes
