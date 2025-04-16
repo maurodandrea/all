@@ -39,4 +39,4 @@ jobs:
           title: "Push next releases"
           createGithubReleases: true
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
