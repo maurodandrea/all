@@ -2,7 +2,7 @@
   "devDependencies": {
     "@changesets/cli": "^2.29.0"
   },
-  "name": "@all/test",
+  "name": "@all/test2",
   "version": "22.0.0",
   "private": true,
   "scripts": {
