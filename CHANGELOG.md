@@ -1,5 +1,11 @@
 # all
 
+## 18.0.0
+
+### Major Changes
+
+- d6f2d73: a
+
 ## 17.0.1
 
 ### Patch Changes
