@@ -1,5 +1,11 @@
 # all
 
+## 27.0.0
+
+### Major Changes
+
+- 3a1a2c9: a
+
 ## 26.0.0
 
 ### Major Changes
