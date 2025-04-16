@@ -1,5 +1,11 @@
 # all
 
+## 8.0.0
+
+### Major Changes
+
+- b82ce92: otto
+
 ## 7.0.0
 
 ### Major Changes
