@@ -38,5 +38,6 @@ jobs:
           commit: "Update CHANGELOG and prepare next release"
           title: "Push next releases"
           createGithubReleases: true
+          setupGitUser: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
