@@ -1,5 +1,11 @@
 # all
 
+## 12.0.0
+
+### Major Changes
+
+- 1e4eb95: ok
+
 ## 11.0.1
 
 ### Patch Changes
