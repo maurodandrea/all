@@ -60,14 +60,6 @@ jobs:
           git tag v${{ steps.version.outputs.package_version }}  # Crea il tag
           git push origin v${{ steps.version.outputs.package_version }}  # Spingi il tag nel repository
 
-      # Step 7: Crea la release su GitHub
+      # Step 7: Crea la release su GitHub con l'azione corretta
       - name: Create GitHub Release
-        uses: ghooks/create-release-action@v1  # Usa un'azione GitHub per creare la release
-        with:
-          tag_name: v${{ steps.version.outputs.package_version }}
-          release_name: "Release v${{ steps.version.outputs.package_version }}"
-          body: "Descrizione della release"
-          draft: false
-          prerelease: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: softprops/action-gh-release@v1  # Azione aggior
