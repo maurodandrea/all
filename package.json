@@ -2,8 +2,8 @@
   "devDependencies": {
     "@changesets/cli": "^2.29.0"
   },
-  "name": "@inframd",
-  "version": "33.1.1",
+  "name": "@infra",
+  "version": "34.1.0",
   "private": true,
   "scripts": {
     "version": "changeset version && npm install",
