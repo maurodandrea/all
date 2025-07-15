@@ -1,5 +1,11 @@
 # all
 
+## 6.0.1
+
+### Patch Changes
+
+- 8d4f264: Test release
+
 ## 4.0.1
 
 ### Patch Changes
