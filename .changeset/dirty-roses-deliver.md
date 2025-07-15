@@ -1,5 +1,5 @@
 ---
-"infra": patch
+"@infra": patch
 ---
 
 Test release
