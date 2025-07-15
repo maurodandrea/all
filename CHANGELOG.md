@@ -1,5 +1,12 @@
 # all
 
+## 33.1.1
+
+### Patch Changes
+
+- 36ac16e: Test release
+- dfb3de4: inframd
+
 ## 32.0.0
 
 ### Major Changes
