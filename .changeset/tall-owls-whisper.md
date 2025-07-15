@@ -1,5 +1,0 @@
----
-"@inframd": patch
----
-
-inframd
