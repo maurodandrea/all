@@ -1,5 +1,11 @@
 # all
 
+## 3.0.1
+
+### Patch Changes
+
+- 2796043: Test release
+
 ## 2.0.1
 
 ### Patch Changes
