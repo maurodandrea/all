@@ -2,8 +2,8 @@
   "devDependencies": {
     "@changesets/cli": "^2.29.0"
   },
-  "name": "@all/test",
-  "version": "32.0.0",
+  "name": "@nome-release",
+  "version": "33.0.0",
   "private": true,
   "scripts": {
     "version": "changeset version && npm install",
