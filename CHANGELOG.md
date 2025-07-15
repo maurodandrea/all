@@ -1,5 +1,11 @@
 # all
 
+## 2.0.1
+
+### Patch Changes
+
+- dcd365f: Test release
+
 ## 1.0.2
 
 ### Patch Changes
