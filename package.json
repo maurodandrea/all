@@ -3,7 +3,7 @@
     "@changesets/cli": "^2.29.0"
   },
   "name": "@infra",
-  "version": "34.1.0",
+  "version": "34.2.0",
   "private": true,
   "scripts": {
     "version": "changeset version && npm install",
