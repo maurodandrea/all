@@ -1,0 +1,5 @@
+---
+"@wf": patch
+---
+
+Test release
