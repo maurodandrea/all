@@ -1,5 +1,5 @@
 ---
-"@wf": patch
+"@infra": patch
 ---
 
 Test release
